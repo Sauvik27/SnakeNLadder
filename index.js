@@ -16,7 +16,7 @@ function start(){
     }
     while(temp === 1){
         for(var i=0;i<nPlayers;i++){
-            droll.push(Math.floor(Math.random()*5)+1);
+            droll.push(Math.floor(Math.random()*6)+1);
             if(phis[i][phis[i].length-1]+droll < gridSize*gridSize || flag === 0){
                 drhis[i][drhis[i].length-1] = droll;
                 document.querySelector(`.r${i+1}`).innerHTML = drhis;
