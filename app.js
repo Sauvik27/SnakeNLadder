@@ -23,19 +23,19 @@ function start(){
     let gridSize = parseInt(document.getElementById("grid").value);
     while(temp === 1){
         console.log("fist iteration");
-        droll1 = Math.floor(Math.random()*5)+1;
+        droll1 = Math.floor(Math.random()*6)+1;
         document.querySelector('.d1').innerHTML = droll1;
         if(phis1[i-2]+droll1 < gridSize*gridSize || flag === 0){
             drhis1.push(droll1);
             document.querySelector('.r1').innerHTML = drhis1;
         }
-        droll2 = Math.floor(Math.random()*5)+1;
+        droll2 = Math.floor(Math.random()*6)+1;
         document.querySelector('.d2').innerHTML = droll2;
         if(phis1[i-2]+droll1 < gridSize*gridSize || flag === 0){
             drhis2.push(droll2);   
             document.querySelector('.r2').innerHTML = drhis2;
         }
-        droll3 = Math.floor(Math.random()*5)+1;
+        droll3 = Math.floor(Math.random()*6)+1;
         document.querySelector('.d3').innerHTML = droll3;
         if(phis1[i-2]+droll1 < gridSize*gridSize || flag === 0){
             drhis3.push(droll3);   
